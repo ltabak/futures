@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>
+Futures and Options
+</title>
+<script src="futures.js">
+
+</script>
+<style>
+body{
+	font-family: Helvetica;
+
+}
+.margin{
+	margin-left:5%
+}
+
+
+.button {
+background-color:rgb(8,65,181);
+color:white;
+width:7%;
+height:50px;
+margin-left:15px;
+margin-top:20px;
+transition: all 0.5s;
+}
+
+#button-margin{
+	margin-left:105px;
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 10px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.inline{ display: inline }
+
+
+#submit{
+background-color:rgb(8,65,181);
+color:white;
+width:130px;
+height:30px;
+margin-left:20px;
+margin-top:20px;
+}
+.margin-right{
+margin-right:3%
+}
+
+.margin-left{
+margin-left:2%
+}
+
+.img{
+	width:60%;
+	height:55%;
+	float:right;
+	}
+	
+.align{
+	 display: inline;
+	 float:right;
+	 margin-top:55px;
+	 margin-right:35px;
+}
+
+.text{
+	font-size: 25px;
+}
+</style>
+<script type="text/javascript" language="javascript">
+function redirect() 
+{
+    window.location.href="reason.html"; 
+	return false;
+}
+
+
+</script>
+
+
+</head>
+
+<body>
+
+<script>
+function reason(browser) {
+  document.getElementById("result").value = browser;
+}
+
+</script>
+
+
+<img src="image/navbar.png"> 
+<div>
+<img src="image/futures-options.png" class="img">
+</div>
+
+<div class="margin">
+
+<h1>What is your reason for being here?</h1>
+<h1>Are you here because you want to be?</h1>
+<h1>Or because you have to be?</h1>
+<p class="text"> Whatever your reason we are glad you are here! </p>
+<p class="text"> Come and learn about Futures and Options and how they can matter to you </p>
+
+<p class="text"> To start select your reason for being here </p>
+</div>
+<br> 
+
+
+<button onclick="homework()"class="button inline" id="button-margin"> <span> Homework </span> </button>
+
+
+<button onclick="research()" class="button inline"> <span> Research </span> </button>
+
+
+<button onclick="curiosity()" class="button inline"> <span> Curiosity </span> </button>
+
+
+<button onclick="prep()" class="button inline"> <span> Prep for Future</span> </button>
+<br>
+<br>
+
+
+<p id="homework"></p>
+<p id="research"> </p>
+<p id="curiosity"> </p>
+<p id="prep"> </p>
+  <br>
+  <br>
+
+ 
+  <br>
+  <br>
+  
+  
+    <p class="margin-right margin-left inline"> Want to check your knowledge 
+  <button type="button" onclick="window.location.href='quiz.html'" class="button"><span> Click Here </span> </button> 
+  
+  </p>
+  
+  <p class="inline margin-right"> To play a game
+  <button type="button" onclick="window.location.href='Farmer Game/index.html'" class="button"><span> Click Here </span> </button> 
+  
+  </p>
+  
+  
+  <p class="inline margin-right"> To continue back to main page
+  <button type="button" onclick="window.location.href='https://www.futuresfundamentals.org/get-the-basics/introduction-to-derivatives/'" class="button"><span> Click Here </span> </button> 
+  
+  </p>
+  
+  <br/>
+ <br/>
+ 
+ <div class="margin-right  margin-left "> 
+<form action="/action_page.php" novalidate>
+Want to stay up to date? Sign up for out email chain: <input type="email" name="user_email">
+<input type="submit" class="button">
+</form>
+</div>
+
+
+
+</body>
+</html>
+
+
+
